@@ -2,6 +2,7 @@
 using System;
 using System.Threading.Tasks;
 using System.Text.Json;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Service_Solution_Project2_PBA
 {
@@ -10,13 +11,25 @@ namespace Service_Solution_Project2_PBA
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            IServiceCollection services = new ServiceCollection();
+            ConfigureServices(services);
+
+        }
+
+        static void ConfigureServices(IServiceCollection services)
+        {
+            services.AddStackExchangeRedisCache(options => {
+                options.Configuration = ConnectionToRedis.connString;
+                options.InstanceName = ConnectionToRedis.instance_Name; 
+            });
         }
     }
 
     static class ConnectionToRedis
     {
-        const string instance_Name = "RedisDemo_";
-        const string connString = "localhost:5002"; //Mapped the redis port to docker. 
+        public const string instance_Name = "RedisDemo_";
+        public const string connString = "localhost:5002"; //Mapped the redis port to docker. 
+
     }
 
     static class DistributedCacheExtensions
@@ -31,7 +44,7 @@ namespace Service_Solution_Project2_PBA
             var options = new DistributedCacheEntryOptions();           //setup the options for the entries we put in the cache.
             options.AbsoluteExpirationRelativeToNow = absoluteExpireTime ?? TimeSpan.FromSeconds(60); //?? = if null use 60 secs
             options.SlidingExpiration = unusedExpireTime ?? TimeSpan.FromSeconds(3600);                 //Not accesing for 1 hour.
-
+          
             var jsonData = JsonSerializer.Serialize(data);  //The entry to Json data format.
             await cache.SetStringAsync(recordID, jsonData, options);
             Console.WriteLine($"Saved entry to Redis with id {recordID} at {DateTime.Now} \n");
