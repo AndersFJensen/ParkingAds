@@ -13,7 +13,7 @@ namespace Service_Solution_Project2_PBA
         }
     }
 
-    class ConnectionToRedis
+    static class ConnectionToRedis
     {
         const string instance_Name = "RedisDemo_";
         const string connString = "localhost:5002"; //Mapped the redis port to docker. 
@@ -34,6 +34,7 @@ namespace Service_Solution_Project2_PBA
 
             var jsonData = JsonSerializer.Serialize(data);  //The entry to Json data format.
             await cache.SetStringAsync(recordID, jsonData, options);
+            Console.WriteLine($"Saved entry to Redis with id {recordID} at {DateTime.Now} \n");
         }
         //get item method
         public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache, string recordId)
@@ -44,12 +45,17 @@ namespace Service_Solution_Project2_PBA
                 return default(T);  //return the default value of an entry we pass in if not found. An object = null, int = 0 etc...
             }
 
+            Console.WriteLine($"Loaded entry from Redis with id {recordId} at {DateTime.Now} \n");
             return JsonSerializer.Deserialize<T>(jsonData);
         }
     }
 
-    class MessageHandler
+    static class MessageHandler
     {
+        //Listen - async --> Check message.
 
+        //Sent - async
+
+        //Check Redis database - async 
     }
 }
