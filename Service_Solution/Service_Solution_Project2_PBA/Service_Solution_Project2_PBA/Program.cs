@@ -8,12 +8,12 @@ namespace Service_Solution_Project2_PBA
 {
     class Program
     {
+        static IDistributedCache IDistcache = null; 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             IServiceCollection services = new ServiceCollection();
             ConfigureServices(services);
-
         }
 
         static void ConfigureServices(IServiceCollection services)
@@ -25,16 +25,16 @@ namespace Service_Solution_Project2_PBA
         }
     }
 
-    static class ConnectionToRedis
+    public static class ConnectionToRedis
     {
         public const string instance_Name = "RedisDemo_";
         public const string connString = "localhost:5002"; //Mapped the redis port to docker. 
 
     }
 
-    static class DistributedCacheExtensions
+    public static class DistributedCacheExtensions
     {
-        //save item method
+        //save entry to Redis method
         public static async Task SetRecordAsync<T>(this IDistributedCache cache, 
             string recordID,                        //the key/unique identifier
             T data,                                 //whatever we store in the cache
@@ -49,7 +49,8 @@ namespace Service_Solution_Project2_PBA
             await cache.SetStringAsync(recordID, jsonData, options);
             Console.WriteLine($"Saved entry to Redis with id {recordID} at {DateTime.Now} \n");
         }
-        //get item method
+
+        //get entry from Redis method
         public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache, string recordId)
         {
             var jsonData = await cache.GetStringAsync(recordId);
