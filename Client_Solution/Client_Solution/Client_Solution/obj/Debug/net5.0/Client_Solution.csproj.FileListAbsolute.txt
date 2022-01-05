@@ -1,0 +1,16 @@
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\bin\Debug\net5.0\Client_Solution.exe
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\bin\Debug\net5.0\Client_Solution.deps.json
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\bin\Debug\net5.0\Client_Solution.runtimeconfig.json
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\bin\Debug\net5.0\Client_Solution.runtimeconfig.dev.json
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\bin\Debug\net5.0\Client_Solution.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\bin\Debug\net5.0\ref\Client_Solution.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\bin\Debug\net5.0\Client_Solution.pdb
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.csprojAssemblyReference.cache
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.AssemblyInfoInputs.cache
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.AssemblyInfo.cs
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.csproj.CoreCompileInputs.cache
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\ref\Client_Solution.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.pdb
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Client_Solution\Client_Solution\Client_Solution\obj\Debug\net5.0\Client_Solution.genruntimeconfig.cache
