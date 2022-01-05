@@ -1,8 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "gb+yumcHC8WYR2cB0kJmfwFsIUQxcbgjHNxsDjamJl5R8xp0ykTQetbD4oE/mKEM03e4EJ4pDu9o9k7j31aCzQ==",
+  "dgSpecHash": "VxiG5zaOxsG8cMeDRsuwS3N3pjMSsEYwHprIPSJKHNkxvZF1nrG1Z9k5WyCB4DOAGTBmN6nozP2blzyzUxO3gQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\6.0.1\\microsoft.extensions.caching.stackexchangeredis.6.0.1.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\stackexchange.redis\\2.2.88\\stackexchange.redis.2.2.88.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.diagnostics.performancecounter\\5.0.0\\system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
