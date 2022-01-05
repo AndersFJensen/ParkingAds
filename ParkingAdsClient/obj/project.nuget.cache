@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gqkX51PMzhHr/lN5rtB+MCLIviyQTzaQF4KAi4DlUmQTyPm3OKR6D5qxKyiH8kqu6yw4zQE9kaYPDUzdqx9bEw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fanes\\source\\repos\\ParkingAds\\ParkingAdsClient\\ParkingAdsClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fanes\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
