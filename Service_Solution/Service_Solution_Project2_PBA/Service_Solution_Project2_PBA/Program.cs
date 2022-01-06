@@ -2,43 +2,41 @@
 using System;
 using System.Threading.Tasks;
 using System.Text.Json;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 
 namespace Service_Solution_Project2_PBA
 {
     class Program
     {
-        struct Entry
+        private struct Entry
         {
-            public string id; 
-            public Entry(string id)
+            public string id;
+            public string desc; 
+            public Entry(string id, string desc)
             {
-                this.id = id; 
+                this.id = id;
+                this.desc = desc; 
             }
         }
-  
+
         static async Task Main(string[] args)
         {
-            var TestEntry1 = new Entry("123");
-            IServiceCollection services = new ServiceCollection(); 
-            ConfigureServices(services);
-            await DistributedCacheExtensions.SetRecordAsync(, TestEntry1.id, TestEntry1);       //<-- inject cache.
-        }
-
-        static void ConfigureServices(IServiceCollection services)
-        {
-            services.AddStackExchangeRedisCache(options => {
-                options.Configuration = ConnectionToRedis.connString;
-                options.InstanceName = ConnectionToRedis.instance_Name; 
-            });
+            RedisCache redisCache = new RedisCache(new MyRedisConfigOptions());
+            var TestEntry1 = new Entry("123", "It is working!");
+   
+            await DistributedCacheExtensions.SetRecordAsync(redisCache, TestEntry1.id, TestEntry1);
+            var result = await DistributedCacheExtensions.GetRecordAsync<Entry>(redisCache, TestEntry1.id);
+            Console.WriteLine($"Entry {result} was found! \n");
         }
     }
 
-    public static class ConnectionToRedis
+    public class MyRedisConfigOptions : RedisCacheOptions
     {
-        public const string instance_Name = "RedisDemo_";
-        public const string connString = "localhost:5002"; //Mapped the redis port to docker. 
-
+        public RedisCacheOptions value = new RedisCacheOptions
+        {
+            Configuration = "127.0.0.1:5002",
+            InstanceName = "RedisDemo_"
+        };
     }
 
     public static class DistributedCacheExtensions
