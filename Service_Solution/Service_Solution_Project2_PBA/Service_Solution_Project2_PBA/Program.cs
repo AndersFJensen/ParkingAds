@@ -8,12 +8,21 @@ namespace Service_Solution_Project2_PBA
 {
     class Program
     {
-        static IDistributedCache IDistcache = null; 
-        static void Main(string[] args)
+        struct Entry
         {
-            Console.WriteLine("Hello World!");
-            IServiceCollection services = new ServiceCollection();
+            public string id; 
+            public Entry(string id)
+            {
+                this.id = id; 
+            }
+        }
+  
+        static async Task Main(string[] args)
+        {
+            var TestEntry1 = new Entry("123");
+            IServiceCollection services = new ServiceCollection(); 
             ConfigureServices(services);
+            await DistributedCacheExtensions.SetRecordAsync(, TestEntry1.id, TestEntry1);       //<-- inject cache.
         }
 
         static void ConfigureServices(IServiceCollection services)
@@ -34,7 +43,7 @@ namespace Service_Solution_Project2_PBA
 
     public static class DistributedCacheExtensions
     {
-        //save entry to Redis method
+        /**save entry to Redis method*/
         public static async Task SetRecordAsync<T>(this IDistributedCache cache, 
             string recordID,                        //the key/unique identifier
             T data,                                 //whatever we store in the cache
@@ -50,7 +59,7 @@ namespace Service_Solution_Project2_PBA
             Console.WriteLine($"Saved entry to Redis with id {recordID} at {DateTime.Now} \n");
         }
 
-        //get entry from Redis method
+        /**get entry from Redis method*/
         public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache, string recordId)
         {
             var jsonData = await cache.GetStringAsync(recordId);
