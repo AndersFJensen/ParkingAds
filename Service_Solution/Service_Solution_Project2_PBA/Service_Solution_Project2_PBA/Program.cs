@@ -34,6 +34,8 @@ namespace Service_Solution_Project2_PBA
             //Test with cache. 
             //Test with multiple server clients. 
             //Q1: "What should we do if the distributed cache are overqueried?"
+            //Split code into seperate files. (Very importanté!).
+            //Communicate with ParkingAd and ParkingService. (Very importanté!).
 
             RedisCache redisCache = new RedisCache(new RedisCacheOptions
             {
