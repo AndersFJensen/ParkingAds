@@ -80,3 +80,4 @@ C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Serv
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Service_Solution_Project2_PBA\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Service_Solution_Project2_PBA\obj\Debug\net5.0\Service_Solution_Project2_PBA.csproj.CopyComplete
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Service_Solution_Project2_PBA\obj\Debug\net5.0\Service_Solution_Project2_PBA.genruntimeconfig.cache
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Service_Solution_Project2_PBA\bin\Debug\net5.0\RabbitMQ.Client.dll

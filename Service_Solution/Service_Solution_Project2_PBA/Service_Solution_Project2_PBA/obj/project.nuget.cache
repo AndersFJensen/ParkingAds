@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VxiG5zaOxsG8cMeDRsuwS3N3pjMSsEYwHprIPSJKHNkxvZF1nrG1Z9k5WyCB4DOAGTBmN6nozP2blzyzUxO3gQ==",
+  "dgSpecHash": "6seAyLgh3IV63gihttrHSlTwcF2Gjf59F0DtOcY0kJXgxhMeaGFjIA2Ms/dEzT5u7gW0zq6bpGO1c2hyL+K8LQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.0\\pipelines.sockets.unofficial.2.2.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\stackexchange.redis\\2.2.88\\stackexchange.redis.2.2.88.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.diagnostics.performancecounter\\5.0.0\\system.diagnostics.performancecounter.5.0.0.nupkg.sha512",
@@ -24,6 +25,7 @@
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
     "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []

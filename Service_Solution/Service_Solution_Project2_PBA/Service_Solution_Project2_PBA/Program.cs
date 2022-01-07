@@ -6,9 +6,12 @@ using Microsoft.Extensions.Caching.StackExchangeRedis;
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 using System.Threading;
+using RabbitMQ.Client; 
 
 namespace Service_Solution_Project2_PBA
 {
+
+    #region RedisCache
     class Program
     {
         [Serializable]
@@ -27,6 +30,11 @@ namespace Service_Solution_Project2_PBA
 
         static async Task Main(string[] args)
         {
+            //TODO: Benchmark with alot of entries without cache. 
+            //Test with cache. 
+            //Test with multiple server clients. 
+            //Q1: "What should we do if the distributed cache are overqueried?"
+
             RedisCache redisCache = new RedisCache(new RedisCacheOptions
             {
                 Configuration = "127.0.0.1:5002", 
@@ -88,12 +96,61 @@ namespace Service_Solution_Project2_PBA
         }
     }
 
-    static class MessageHandler
+    #endregion
+
+    #region RabbitMQ
+
+    class MessageHandler
     {
-        //Listen - async --> Check message.
+        ConnectionFactory factory = new ConnectionFactory();
+        IConnection conn = null;
+        IModel channelSent = null;
+        IModel channelRecieve = null;
+        //TODO: 
+        //We need a consumer. Running async. 
+        //Test the message system. 
+        public MessageHandler()
+        {
+            Init();  
+        } 
+        public void Init()
+        {
+            factory.UserName = "guest";
+            factory.Password = "guest";
+            factory.HostName = "localHost:5672";
+            try
+            {
+                conn = factory.CreateConnection();
+                channelSent = conn.CreateModel();
+                channelSent.QueueDeclareNoWait("TestSent", true, false, false, null);
+                channelRecieve = conn.CreateModel();
+                channelRecieve.QueueDeclareNoWait("TestRecieve", true, false, false, null);
+            }
+            catch (Exception e)
+            {
+                throw e; 
+            }
 
-        //Sent - async
+        }
+        public void Disconnect()    //TODO: Should be able to sent a specific channel/conn to close. 
+        {
+            channelRecieve.Close();
+            conn.Close();
+            Console.WriteLine($"Disconnected from {factory.UserName}!\n host: {factory.HostName}");
+        }
 
-        //Check Redis database - async 
+        public async Task<T> SentMessage<T>(T data) //TODO: We should be able to check the type and sent it to the right queue.
+        {
+            if (data is null)
+            {
+                return default(T);
+            }
+            
+
+            return data; //Change
+        }
+
     }
+
+    #endregion
 }
