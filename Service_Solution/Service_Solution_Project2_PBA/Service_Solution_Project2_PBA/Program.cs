@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.StackExchangeRedis;
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 using System.Threading;
+using Service_Solution_Project2_PBA.services;
 
 namespace Service_Solution_Project2_PBA
 {
@@ -23,7 +24,7 @@ namespace Service_Solution_Project2_PBA
             }
         }
 
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             //TODO: Benchmark with alot of entries without cache. 
             //Test with cache. 
@@ -32,27 +33,39 @@ namespace Service_Solution_Project2_PBA
             //Split code into seperate files. (Very importanté!).
             //Communicate with ParkingAd and ParkingService. (Very importanté!).
 
-            //var rabbitMQReciever = new RabbitMQRecieve();
+            Init();
 
-            RedisCache redisCache = new RedisCache(new RedisCacheOptions
+        }
+
+        private async static void Init()
+        {
+            List<TestEntry> testList = await TestRedisCacheConnection();
+
+            var rabbitMQReciever = new RabbitMQRecieve();
+            foreach (TestEntry entry in testList)
             {
-                Configuration = "127.0.0.1:5002", 
-                //InstanceName = "RedisCache_" + Guid.NewGuid().ToString(),
-            });
+                var rabbitMQSent = new RabbitMQSent(entry.ToString());
+            }
+        }
+
+        private static async Task<List<TestEntry>> TestRedisCacheConnection()
+        {
+            RedisCacheService redisCacheService = new RedisCacheService();
+            
             var TestEntry1 = new TestEntry("123", "It is working!");
             var TestEntry2 = new TestEntry("1234", "It is workingx!");
             var TestEntry3 = new TestEntry("12345", "It is workingy!");
             var TestEntry4 = new TestEntry("123456", "It is workingz!");
-            await DistributedCacheExtensions.SetRecordAsync(redisCache, TestEntry1.id, TestEntry1);
-            await DistributedCacheExtensions.SetRecordAsync(redisCache, TestEntry2.id, TestEntry2);
-            await DistributedCacheExtensions.SetRecordAsync(redisCache, TestEntry3.id, TestEntry3);
-            await DistributedCacheExtensions.SetRecordAsync(redisCache, TestEntry4.id, TestEntry4);
+            await redisCacheService.SaveToCache(TestEntry1.id, TestEntry1);
+            await redisCacheService.SaveToCache(TestEntry2.id, TestEntry2);
+            await redisCacheService.SaveToCache(TestEntry3.id, TestEntry3);
+            await redisCacheService.SaveToCache(TestEntry4.id, TestEntry4);
             Thread.Sleep(TimeSpan.FromSeconds(2));
             List<TestEntry> list = new List<TestEntry>();
-            list.Add(await DistributedCacheExtensions.GetRecordAsync<TestEntry>(redisCache, TestEntry1.id));
-            list.Add(await DistributedCacheExtensions.GetRecordAsync<TestEntry>(redisCache, TestEntry2.id));
-            list.Add(await DistributedCacheExtensions.GetRecordAsync<TestEntry>(redisCache, TestEntry3.id));
-            list.Add(await DistributedCacheExtensions.GetRecordAsync<TestEntry>(redisCache, TestEntry4.id));
+            list.Add(await redisCacheService.RetrieveFromCache<TestEntry>(TestEntry1.id));
+            list.Add(await redisCacheService.RetrieveFromCache<TestEntry>(TestEntry2.id));
+            list.Add(await redisCacheService.RetrieveFromCache<TestEntry>(TestEntry3.id));
+            list.Add(await redisCacheService.RetrieveFromCache<TestEntry>(TestEntry4.id));
             if (list.Count != 0)
                 foreach (TestEntry result in list)
                 {
@@ -60,6 +73,7 @@ namespace Service_Solution_Project2_PBA
                 }
             else
             { Console.WriteLine("Not working!"); }
+            return list;
         }
     }
 }

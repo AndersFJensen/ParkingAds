@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Service_Solution_Project2_PBA
 {
-    class RabbitMQSent
+    public class RabbitMQSent
     {
         public RabbitMQSent(string message)
         {

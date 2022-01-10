@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 
 namespace Service_Solution_Project2_PBA
 {
-    class RabbitMQRecieve
+    public class RabbitMQRecieve
     {
 
         //Will keep running with the EventingBasicConsumer event.  
@@ -22,7 +22,7 @@ namespace Service_Solution_Project2_PBA
             {
                 channel.QueueDeclare(queue: "hello",
                                  durable: false,
-                                 exclusive: false,
+                                 exclusive: false,  
                                  autoDelete: false,
                                  arguments: null);
                 var consumer = new EventingBasicConsumer(channel);
