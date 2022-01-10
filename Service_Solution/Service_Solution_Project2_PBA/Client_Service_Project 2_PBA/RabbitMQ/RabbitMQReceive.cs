@@ -14,7 +14,7 @@ namespace Client_Service_Project_2_PBA.RabbitMQ
             {
                 UserName = "guest",
                 Password = "guest",
-                HostName = "localHost:5672"
+                HostName = "localHost"
             };
             using (var conn = factory.CreateConnection())
             using (var channel = conn.CreateModel())

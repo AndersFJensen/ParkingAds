@@ -14,12 +14,12 @@ namespace Client_Service_Project_2_PBA.RabbitMQ
             {
                 UserName = "guest",
                 Password = "guest",
-                HostName = "localHost:5672"
+                HostName = "localHost"
             };
             using (var conn = factory.CreateConnection())
             using (var channel = conn.CreateModel())
             {
-                channel.QueueDeclare(queue: "hello",
+                channel.QueueDeclare(queue: "SendFromClient",
                                  durable: false,
                                  exclusive: false,
                                  autoDelete: false,
@@ -28,10 +28,11 @@ namespace Client_Service_Project_2_PBA.RabbitMQ
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish(exchange: "",
-                                     routingKey: "hello",
+                                     routingKey: "SendFromClient",
                                      basicProperties: null,
                                      body: body);
                 Console.WriteLine(" [x] Sent {0}", message);
+                Console.ReadLine();
             }
 
         }

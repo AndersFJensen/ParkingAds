@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_Service_Project_2_PBA.RabbitMQ;
+using System;
 
 namespace Client_Service_Project_2_PBA
 {
@@ -6,7 +7,9 @@ namespace Client_Service_Project_2_PBA
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            RabbitMQSent sendWithRabbitMQ = new RabbitMQSent();
+            string message = "Message From Client";
+            sendWithRabbitMQ.RabbitMQSend(message);
         }
     }
 }

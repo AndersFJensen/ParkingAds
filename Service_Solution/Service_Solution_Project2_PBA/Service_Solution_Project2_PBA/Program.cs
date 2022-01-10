@@ -41,13 +41,13 @@ namespace Service_Solution_Project2_PBA
 
         private async static void Init()
         {
-            List<TestEntry> testList = await TestRedisCacheConnection();
+            //List<TestEntry> testList = await TestRedisCacheConnection();
 
             var rabbitMQReciever = new RabbitMQRecieve();
-            foreach (TestEntry entry in testList)
-            {
-                var rabbitMQSent = new RabbitMQSent(entry.ToString());
-            }
+            //foreach (TestEntry entry in testList)
+            //{
+            //    var rabbitMQSent = new RabbitMQSent(entry.ToString());
+            //}
         }
 
         private static async Task<List<TestEntry>> TestRedisCacheConnection()
