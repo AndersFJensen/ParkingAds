@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service_Solution_Project2_PBA", "Service_Solution_Project2_PBA\Service_Solution_Project2_PBA.csproj", "{3178E3AA-7A9A-459D-8BE2-845D63E0C00B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service_Solution_Project2_PBA", "Service_Solution_Project2_PBA\Service_Solution_Project2_PBA.csproj", "{3178E3AA-7A9A-459D-8BE2-845D63E0C00B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Project_For_Service_Solution", "Test_Project_For_Service_Solution\Test_Project_For_Service_Solution.csproj", "{F932E632-2CBC-4D55-A5A6-EE30A29CD271}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_Project_For_Service_Solution", "Test_Project_For_Service_Solution\Test_Project_For_Service_Solution.csproj", "{F932E632-2CBC-4D55-A5A6-EE30A29CD271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_Service_Project 2_PBA", "Client_Service_Project 2_PBA\Client_Service_Project 2_PBA.csproj", "{4D0F1F30-EDE5-4CD1-8A59-8505306D3F59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F932E632-2CBC-4D55-A5A6-EE30A29CD271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F932E632-2CBC-4D55-A5A6-EE30A29CD271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F932E632-2CBC-4D55-A5A6-EE30A29CD271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D0F1F30-EDE5-4CD1-8A59-8505306D3F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0F1F30-EDE5-4CD1-8A59-8505306D3F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0F1F30-EDE5-4CD1-8A59-8505306D3F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0F1F30-EDE5-4CD1-8A59-8505306D3F59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
