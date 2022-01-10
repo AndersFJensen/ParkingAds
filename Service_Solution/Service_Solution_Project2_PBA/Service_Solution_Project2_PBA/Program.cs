@@ -33,7 +33,9 @@ namespace Service_Solution_Project2_PBA
             //Split code into seperate files. (Very importanté!).
             //Communicate with ParkingAd and ParkingService. (Very importanté!).
 
+
             Init();
+            while (true) ;
 
         }
 
