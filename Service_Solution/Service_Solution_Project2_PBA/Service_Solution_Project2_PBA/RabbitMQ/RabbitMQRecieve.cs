@@ -15,12 +15,12 @@ namespace Service_Solution_Project2_PBA
             {
                 UserName = "guest",
                 Password = "guest",
-                HostName = "localHost:5672"
+                HostName = "localhost"
             };
             using (var conn = factory.CreateConnection())
             using (var channel = conn.CreateModel())
             {
-                channel.QueueDeclare(queue: "hello",
+                channel.QueueDeclare(queue: "TestQueue",
                                  durable: false,
                                  exclusive: false,  
                                  autoDelete: false,
@@ -32,7 +32,7 @@ namespace Service_Solution_Project2_PBA
                     var message = Encoding.UTF8.GetString(body);  
                     Console.WriteLine(" [x] Received {0}", message);
                 };
-                channel.BasicConsume(queue: "hello",
+                channel.BasicConsume(queue: "TestQueue",
                                  autoAck: true,
                                  consumer: consumer);
             }
