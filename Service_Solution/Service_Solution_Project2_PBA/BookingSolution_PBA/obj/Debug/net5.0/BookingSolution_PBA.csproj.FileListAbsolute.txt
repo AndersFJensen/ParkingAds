@@ -1,0 +1,16 @@
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\bin\Debug\net5.0\BookingSolution_PBA.exe
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\bin\Debug\net5.0\BookingSolution_PBA.deps.json
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\bin\Debug\net5.0\BookingSolution_PBA.runtimeconfig.json
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\bin\Debug\net5.0\BookingSolution_PBA.runtimeconfig.dev.json
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\bin\Debug\net5.0\BookingSolution_PBA.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\bin\Debug\net5.0\ref\BookingSolution_PBA.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\bin\Debug\net5.0\BookingSolution_PBA.pdb
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.csprojAssemblyReference.cache
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.AssemblyInfoInputs.cache
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.AssemblyInfo.cs
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.csproj.CoreCompileInputs.cache
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\ref\BookingSolution_PBA.dll
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.pdb
+C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingSolution_PBA\obj\Debug\net5.0\BookingSolution_PBA.genruntimeconfig.cache

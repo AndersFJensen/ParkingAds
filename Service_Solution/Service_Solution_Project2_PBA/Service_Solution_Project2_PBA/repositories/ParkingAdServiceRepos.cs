@@ -52,6 +52,7 @@ namespace Service_Solution_Project2_PBA.repositories
             Console.WriteLine("The Elapsed event was raised at {0:HH:mm:ss.fff}",
                               e.SignalTime);
             Console.Error.Write("Time for respond took to long. Read from cache!");
+            //Should have a method for the latter.
         }
     }
 }
