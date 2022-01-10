@@ -27,13 +27,23 @@ namespace Service_Solution_Project2_PBA
         public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache, string recordId)
         {
             string jsonData = await cache.GetStringAsync(recordId);
-            if (jsonData is null)
-            {
-                return default(T);  
-            }
+
+            await GetRecordAsyncIsDefault<string>(cache, recordId);
 
             Console.WriteLine($"Loaded entry {jsonData} from Redis with id {recordId} at {DateTime.Now} \n");
             return JsonSerializer.Deserialize<T>(jsonData);
+        }
+
+        private static async Task<T> GetRecordAsyncIsDefault<T>(IDistributedCache cache, string cacheRecord)
+        {
+            bool result = false;
+            if (cacheRecord is null)
+            {
+
+                await SetRecordAsync<string>(cache, recordId, );
+                
+            }
+            return result;
         }
     }
 }

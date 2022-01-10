@@ -20,7 +20,7 @@ namespace Service_Solution_Project2_PBA
             using (var conn = factory.CreateConnection())
             using (var channel = conn.CreateModel())
             {
-                channel.QueueDeclare(queue: "TestQueue",
+                channel.QueueDeclare(queue: "SendFromClient",
                                  durable: false,
                                  exclusive: false,  
                                  autoDelete: false,
@@ -32,12 +32,15 @@ namespace Service_Solution_Project2_PBA
                     var message = Encoding.UTF8.GetString(body);  
                     Console.WriteLine(" [x] Received {0}", message);
                 };
-                channel.BasicConsume(queue: "TestQueue",
+                channel.BasicConsume(queue: "SendFromClient",
                                  autoAck: true,
                                  consumer: consumer);
+                Console.ReadLine();
             }
-        } 
-        
+            
+
+        }
+
 
     }
 }
