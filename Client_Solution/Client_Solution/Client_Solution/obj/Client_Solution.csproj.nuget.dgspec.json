@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj": {}
+    "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj": {
+    "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj",
+        "projectUniqueName": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj",
         "projectName": "Client_Solution",
-        "projectPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj",
-        "packagesPath": "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\obj\\",
+        "projectPath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\Client_Solution.csproj",
+        "packagesPath": "C:\\Users\\fanes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Client_Solution\\Client_Solution\\Client_Solution\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Magnus Carlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\fanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -58,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }
