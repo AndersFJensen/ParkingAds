@@ -6,7 +6,9 @@ using Microsoft.Extensions.Caching.StackExchangeRedis;
 using System.Text.Json.Serialization;
 using System.Collections.Generic;
 using System.Threading;
-using RabbitMQ.Client; 
+using RabbitMQ.Client;
+using System.Text;
+using RabbitMQ.Client.Events;
 
 namespace Service_Solution_Project2_PBA
 {
@@ -101,56 +103,67 @@ namespace Service_Solution_Project2_PBA
     #endregion
 
     #region RabbitMQ
-
-    class MessageHandler
+    class RabbitMQSent
     {
-        ConnectionFactory factory = new ConnectionFactory();
-        IConnection conn = null;
-        IModel channelSent = null;
-        IModel channelRecieve = null;
-        //TODO: 
-        //We need a consumer. Running async. 
-        //Test the message system. 
-        public MessageHandler()
+        public RabbitMQSent(string message)
         {
-            Init();  
+            var factory = new ConnectionFactory() { 
+                UserName = "guest",
+                Password = "guest",
+                HostName = "localHost:5672"
+        };
+            using (var conn = factory.CreateConnection())
+            using (var channel = conn.CreateModel())
+            {
+                channel.QueueDeclare(queue: "hello",
+                                 durable: false,
+                                 exclusive: false,
+                                 autoDelete: false,
+                                 arguments: null);
+
+                var body = Encoding.UTF8.GetBytes(message);
+
+                channel.BasicPublish(exchange: "",
+                                     routingKey: "hello",
+                                     basicProperties: null,
+                                     body: body);
+                Console.WriteLine(" [x] Sent {0}", message);
+            }
+        }
+    }
+    class RabbitMQRecieve
+    {
+
+        //Will keep running with the EventingBasicConsumer event.  
+        public RabbitMQRecieve()
+        {
+            var factory = new ConnectionFactory()
+            {
+                UserName = "guest",
+                Password = "guest",
+                HostName = "localHost:5672"
+            };
+            using (var conn = factory.CreateConnection())
+            using (var channel = conn.CreateModel())
+            {
+                channel.QueueDeclare(queue: "hello",
+                                 durable: false,
+                                 exclusive: false,
+                                 autoDelete: false,
+                                 arguments: null);
+                var consumer = new EventingBasicConsumer(channel);
+                consumer.Received += (model, ea) =>
+                {
+                    var body = ea.Body.ToArray();
+                    var message = Encoding.UTF8.GetString(body);
+                    Console.WriteLine(" [x] Received {0}", message);
+                };
+                channel.BasicConsume(queue: "hello",
+                                 autoAck: true,
+                                 consumer: consumer);
+            }
         } 
-        public void Init()
-        {
-            factory.UserName = "guest";
-            factory.Password = "guest";
-            factory.HostName = "localHost:5672";
-            try
-            {
-                conn = factory.CreateConnection();
-                channelSent = conn.CreateModel();
-                channelSent.QueueDeclareNoWait("TestSent", true, false, false, null);
-                channelRecieve = conn.CreateModel();
-                channelRecieve.QueueDeclareNoWait("TestRecieve", true, false, false, null);
-            }
-            catch (Exception e)
-            {
-                throw e; 
-            }
-
-        }
-        public void Disconnect()    //TODO: Should be able to sent a specific channel/conn to close. 
-        {
-            channelRecieve.Close();
-            conn.Close();
-            Console.WriteLine($"Disconnected from {factory.UserName}!\n host: {factory.HostName}");
-        }
-
-        public async Task<T> SentMessage<T>(T data) //TODO: We should be able to check the type and sent it to the right queue.
-        {
-            if (data is null)
-            {
-                return default(T);
-            }
-            
-
-            return data; //Change
-        }
+        
 
     }
 
