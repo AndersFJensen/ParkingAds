@@ -9,6 +9,6 @@ namespace Service_Solution_Project2_PBA.services
 {
     public interface AdServiceServiceIF
     {
-        public Task<Message> GetAdFromAdService();
+        public Task<AdServiceMessageModel> GetAdFromAdService();
     }
 }

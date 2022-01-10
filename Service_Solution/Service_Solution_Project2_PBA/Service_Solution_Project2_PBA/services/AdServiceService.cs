@@ -7,7 +7,7 @@ namespace Service_Solution_Project2_PBA.services
 {
     class AdServiceService : AdServiceServiceIF
     {
-        public async Task<Message> GetAdFromAdService()
+        public async Task<AdServiceMessageModel> GetAdFromAdService()
         {
             AdServiceServiceRepos adServiceServiceRepos = new AdServiceServiceRepos();
 
