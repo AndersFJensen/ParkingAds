@@ -14,3 +14,5 @@ C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Serv
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\ref\BookingService.dll
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.pdb
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.genruntimeconfig.cache
+C:\Users\carls\Desktop\Eksamen 2. semester\kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\RabbitMQ.Client.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.csproj.CopyComplete

@@ -1,6 +1,8 @@
 ﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 
 namespace EmailService
@@ -9,7 +11,9 @@ namespace EmailService
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to the MailService!");
+            RabbitMQRecieve rabbitMQ = new RabbitMQRecieve();
+            while (true) ;
         }
     }
 
@@ -37,6 +41,7 @@ namespace EmailService
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
                     Console.WriteLine(" [x] Received {0}", message);
+                    MailHandler.SentMail(message);
                 };
                 channel.BasicConsume(queue: "SendFromClient",
                                  autoAck: true,
@@ -50,9 +55,24 @@ namespace EmailService
 
     static class MailHandler
     {
-        public static void SentMail()
+        public static void SentMail(string message)
         {
-
+            using (MailMessage mailMessage = new MailMessage())
+            using (SmtpClient smtpClient = new SmtpClient())
+            {
+                mailMessage.To.Add(new MailAddress("carlsen57@gmail.com"));
+                mailMessage.From = new MailAddress("");
+                mailMessage.Subject = "From the mailService!";
+                mailMessage.IsBodyHtml = true;
+                mailMessage.Body = message; 
+                smtpClient.Port = 587;
+                smtpClient.Host = "smtp.gmail.com";
+                smtpClient.EnableSsl = true;
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new NetworkCredential("FromMailAddress", "password");
+                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtpClient.Send(mailMessage);
+            }
         }
     }
 }

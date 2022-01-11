@@ -1,0 +1,16 @@
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.exe
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.deps.json
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.runtimeconfig.json
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.runtimeconfig.dev.json
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ref\ControlBus.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.pdb
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.csproj.AssemblyReference.cache
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.AssemblyInfoInputs.cache
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.AssemblyInfo.cs
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.csproj.CoreCompileInputs.cache
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ref\ControlBus.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.pdb
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.genruntimeconfig.cache
