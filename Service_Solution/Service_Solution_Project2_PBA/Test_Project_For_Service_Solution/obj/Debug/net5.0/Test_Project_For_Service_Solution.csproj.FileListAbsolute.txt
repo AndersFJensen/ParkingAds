@@ -257,3 +257,4 @@ C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Serv
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Test_Project_For_Service_Solution\obj\Debug\net5.0\Test_Project_For_Service_Solution.pdb
 C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Test_Project_For_Service_Solution\obj\Debug\net5.0\Test_Project_For_Service_Solution.genruntimeconfig.cache
 C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Test_Project_For_Service_Solution\bin\Debug\net5.0\RabbitMQ.Client.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\Test_Project_For_Service_Solution\bin\Debug\net5.0\RabbitMQ.Client.dll

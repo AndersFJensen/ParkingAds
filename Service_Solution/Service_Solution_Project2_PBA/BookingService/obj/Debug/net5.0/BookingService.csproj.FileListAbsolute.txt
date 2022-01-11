@@ -1,0 +1,16 @@
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\BookingService.exe
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\BookingService.deps.json
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\BookingService.runtimeconfig.json
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\BookingService.runtimeconfig.dev.json
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\BookingService.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\ref\BookingService.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\bin\Debug\net5.0\BookingService.pdb
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.csproj.AssemblyReference.cache
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.AssemblyInfoInputs.cache
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.AssemblyInfo.cs
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.csproj.CoreCompileInputs.cache
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\ref\BookingService.dll
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.pdb
+C:\Users\carls\Desktop\Eksamen 2. semester\Kode\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\BookingService\obj\Debug\net5.0\BookingService.genruntimeconfig.cache
