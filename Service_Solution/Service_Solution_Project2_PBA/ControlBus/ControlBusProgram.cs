@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace BookingService
+namespace ControlBus
 {
-    class Program
+    class ControlBusProgram
     {
         static void Main(string[] args)
         {

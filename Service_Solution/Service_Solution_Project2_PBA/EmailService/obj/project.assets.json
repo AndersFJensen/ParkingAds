@@ -115,11 +115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj",
-      "projectName": "BookingService",
-      "projectPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj",
+      "projectUniqueName": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
+      "projectName": "EmailService",
+      "projectPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
       "packagesPath": "C:\\Users\\carls\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\obj\\",
+      "outputPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

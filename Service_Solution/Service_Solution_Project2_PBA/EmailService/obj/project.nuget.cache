@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CFwn+4PYjfaXXk4CsUlbes9Jwox4dnqR62oG/h+hlyUDJEQHuR0pB6CkyRGzgxKSOlFvB/MTDE3e4Cyzjrghxw==",
+  "dgSpecHash": "JQu9VuICVM+RhILcdgBQRN6gWczkPd2Ksf9j/DErWfBN3SSq8CZb/0OZ9yESKpRbggGKDhJQ6ltTs83IsBQogg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj",
+  "projectFilePath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\carls\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
     "C:\\Users\\carls\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
