@@ -2,6 +2,11 @@
 using RabbitMQ.Client.Events;
 using System;
 using System.Text;
+using MongoDB;
+using MongoDB.Driver;
+using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+using System.Threading.Tasks;
 
 namespace BookingService
 {
@@ -34,19 +39,23 @@ namespace BookingService
                                  autoDelete: false,
                                  arguments: null);
                 var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += (model, ea) =>
+                consumer.Received += (model, ea) =>          
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine(" [x] Received {0}", message);        //Sent message to mail server. 
+                    Console.WriteLine(" [x] Received {0}", message);
+
+                    CreateBookingModel(message);
                 };
                 channel.BasicConsume(queue: "SendFromClient",
                                  autoAck: true,
                                  consumer: consumer);
                 Console.ReadLine();
             }
-
-
+        }
+        public async void CreateBookingModel(string message)
+        {
+            await MongoDBHandler.CreateBooking(null);       //Create bookingModel for saving.
         }
     }
     static class RabbitMQSent
@@ -78,6 +87,42 @@ namespace BookingService
                     Console.WriteLine(" [x] Sent {0}", message);
                 }
             }
+        }
+    }
+
+    public class BookingModel
+    {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
+        [BsonElement("Price")]
+        public string Price { get; set; }
+        [BsonElement("Location")]
+        public string Location { get; set; }
+        [BsonElement("License Plate Number")]
+        public string LicensePlateNr { get; set; }
+        [BsonElement("User")]
+        public string User { get; set; }
+    }
+
+    public static class MongoDBHandler
+    {
+        public static async Task CreateBooking(BookingModel message)
+        {
+            BsonDocument bsonElement = new BsonDocument {
+                {"","" },
+                {"","" },
+                {"","" },
+                {"","" },
+                {"","" }
+            };
+            MongoClient dbClient = new MongoClient("mongodb://localhost:27017;DatebaseName:'BookingData';CollectionName:'Bookings'");
+            var database = dbClient.GetDatabase("BookingsData");
+            var collection = database.GetCollection<BsonDocument>("Bookings");
+            try { await collection.InsertOneAsync(bsonElement);
+                RabbitMQSent.SentMessageRabbitMQ(message.ToString());       
+            }
+            catch (Exception e) { throw new Exception("Couldnt insert the booking model to MongoDb! Try again or check for an error! "); }
         }
     }
 }

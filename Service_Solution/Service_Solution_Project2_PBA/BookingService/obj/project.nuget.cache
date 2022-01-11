@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "CFwn+4PYjfaXXk4CsUlbes9Jwox4dnqR62oG/h+hlyUDJEQHuR0pB6CkyRGzgxKSOlFvB/MTDE3e4Cyzjrghxw==",
+  "dgSpecHash": "DbkjY7wFGpr4Ib4bqNQ5vzA+PicmHkE93ZqE40wPFjhISW/A1ZhThWzWkOZ48Xf2ASgbGUfZyAq7OY3rbFje8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\carls\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
+    "C:\\Users\\carls\\.nuget\\packages\\mongodb.bson\\2.14.1\\mongodb.bson.2.14.1.nupkg.sha512",
+    "C:\\Users\\carls\\.nuget\\packages\\mongodb.driver\\2.14.1\\mongodb.driver.2.14.1.nupkg.sha512",
+    "C:\\Users\\carls\\.nuget\\packages\\mongodb.driver.core\\2.14.1\\mongodb.driver.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\carls\\.nuget\\packages\\mongodb.libmongocrypt\\1.3.0\\mongodb.libmongocrypt.1.3.0.nupkg.sha512",
     "C:\\Users\\carls\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\carls\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\carls\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\carls\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\carls\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\carls\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []

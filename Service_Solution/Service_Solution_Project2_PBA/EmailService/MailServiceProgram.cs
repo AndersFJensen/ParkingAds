@@ -53,7 +53,7 @@ namespace EmailService
         }
     }
 
-    static class MailHandler
+    public static class MailHandler
     {
         public static void SentMail(string message)
         {
@@ -61,7 +61,7 @@ namespace EmailService
             using (SmtpClient smtpClient = new SmtpClient())
             {
                 mailMessage.To.Add(new MailAddress("carlsen57@gmail.com"));
-                mailMessage.From = new MailAddress("");
+                mailMessage.From = new MailAddress("carlsen57@gmail.com");      //Create fake email and test with. 
                 mailMessage.Subject = "From the mailService!";
                 mailMessage.IsBodyHtml = true;
                 mailMessage.Body = message; 
@@ -69,7 +69,7 @@ namespace EmailService
                 smtpClient.Host = "smtp.gmail.com";
                 smtpClient.EnableSsl = true;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("FromMailAddress", "password");
+                smtpClient.Credentials = new NetworkCredential("FromMailAddress", "password");  //Change to the new email address. 
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Send(mailMessage);
             }

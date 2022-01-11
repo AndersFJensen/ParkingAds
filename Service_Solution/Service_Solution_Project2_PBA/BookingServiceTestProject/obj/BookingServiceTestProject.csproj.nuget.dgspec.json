@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[16.9.4, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.1, )"
@@ -124,6 +128,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[6.2.2, )"
