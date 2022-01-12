@@ -28,12 +28,12 @@ namespace Service_Solution_Project2_PBA.services
 
         public async Task<T> RetrieveFromCacheAdService<T>(string recordId)
         {
-            return await DistributedCacheExtensions.GetRecordAsync<T>(adRedisCache, recordId);
+            return await DistributedCacheExtensions.GetRecordAsync<T>(adRedisCache, recordId, "Ad");
         }
 
         public async Task<T> RetrieveFromCacheParkingService<T>(string recordId)
         {
-            return await DistributedCacheExtensions.GetRecordAsync<T>(parkingRedisCache, recordId);
+            return await DistributedCacheExtensions.GetRecordAsync<T>(parkingRedisCache, recordId, "Parking");
             
         }
 

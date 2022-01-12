@@ -30,3 +30,19 @@ C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solu
 C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ref\ControlBus.dll
 C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.pdb
 C:\Users\Magnus Carlsen\Desktop\Studie Opgaver\ParkingAd\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.genruntimeconfig.cache
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.exe
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.deps.json
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.runtimeconfig.json
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.runtimeconfig.dev.json
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.dll
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ref\ControlBus.dll
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\bin\Debug\net5.0\ControlBus.pdb
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.csprojAssemblyReference.cache
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.AssemblyInfoInputs.cache
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.AssemblyInfo.cs
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.csproj.CoreCompileInputs.cache
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.dll
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ref\ControlBus.dll
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.pdb
+C:\Users\fanes\Source\Repos\AndersFJensen\ParkingAds\Service_Solution\Service_Solution_Project2_PBA\ControlBus\obj\Debug\net5.0\ControlBus.genruntimeconfig.cache
