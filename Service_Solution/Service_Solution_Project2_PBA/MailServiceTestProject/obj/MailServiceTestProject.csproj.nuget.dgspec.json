@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj": {}
+    "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj": {
+    "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
+        "projectUniqueName": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
         "projectName": "EmailService",
-        "projectPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
-        "packagesPath": "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\obj\\",
+        "projectPath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
+        "packagesPath": "C:\\Users\\fanes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Magnus Carlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\fanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -64,26 +65,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj": {
+    "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj",
+        "projectUniqueName": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj",
         "projectName": "MailServiceTestProject",
-        "projectPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj",
-        "packagesPath": "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\obj\\",
+        "projectPath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\MailServiceTestProject.csproj",
+        "packagesPath": "C:\\Users\\fanes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\MailServiceTestProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Magnus Carlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\fanes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -96,8 +98,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj": {
-                "projectPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj"
+              "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj": {
+                "projectPath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj"
               }
             }
           }
@@ -144,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

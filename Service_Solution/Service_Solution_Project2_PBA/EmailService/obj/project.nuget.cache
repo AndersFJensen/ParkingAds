@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kkBiUz7fnvJ1PifeWei/X/PjgeZcImoAS48Wwm2OM3hNpkL1nfwgADyigHRK7MrTdFZJy5vZt9LJ3nn/iAxxMA==",
+  "dgSpecHash": "PmM9OTettxDgOhn1rOxtnxprGG1i1D7l72LzOyBh/SUDKgE4JSI9gNf9oGCO64CzEQtN/xa8wkG9Bmkc7ib1+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
+  "projectFilePath": "C:\\Users\\fanes\\Source\\Repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
-    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "C:\\Users\\fanes\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\fanes\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\fanes\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
