@@ -12,12 +12,12 @@ namespace EmailService
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the MailService!");
-            RabbitMQRecieve rabbitMQ = new RabbitMQRecieve();
+            //RabbitMQRecieve rabbitMQ = new RabbitMQRecieve();
             while (true) ;
         }
     }
 
-    class RabbitMQRecieve
+    public class RabbitMQRecieve
     {
         public RabbitMQRecieve()
         {
@@ -30,7 +30,8 @@ namespace EmailService
             using (var conn = factory.CreateConnection())
             using (var channel = conn.CreateModel())
             {
-                channel.QueueDeclare(queue: "SentFromClient",
+                string message = ""; 
+                channel.QueueDeclare(queue: "TestQueue",
                                  durable: false,
                                  exclusive: false,
                                  autoDelete: false,
@@ -39,13 +40,13 @@ namespace EmailService
                 consumer.Received += (model, ea) =>
                 {
                     var body = ea.Body.ToArray();
-                    var message = Encoding.UTF8.GetString(body);
+                    message = Encoding.UTF8.GetString(body);
                     Console.WriteLine(" [x] Received {0}", message);
-                    MailHandler.SentMail(message);
                 };
-                channel.BasicConsume(queue: "SentFromClient",
+                channel.BasicConsume(queue: "TestQueue",
                                  autoAck: true,
                                  consumer: consumer);
+                MailHandler.SentMail(message);
                 Console.ReadLine();
             }
 
@@ -69,7 +70,7 @@ namespace EmailService
                 smtpClient.Host = "smtp.gmail.com";
                 smtpClient.EnableSsl = true;
                 smtpClient.UseDefaultCredentials = false;
-                //smtpClient.Credentials = new NetworkCredential("FromMailAddress", "password");  //Change to the new email address. 
+                smtpClient.Credentials = new NetworkCredential("","");  //Change to the new email address. 
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Send(mailMessage);
             }
