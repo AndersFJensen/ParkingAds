@@ -30,7 +30,7 @@ namespace EmailService
             using (var conn = factory.CreateConnection())
             using (var channel = conn.CreateModel())
             {
-                channel.QueueDeclare(queue: "SendFromClient",
+                channel.QueueDeclare(queue: "SentFromClient",
                                  durable: false,
                                  exclusive: false,
                                  autoDelete: false,
@@ -43,7 +43,7 @@ namespace EmailService
                     Console.WriteLine(" [x] Received {0}", message);
                     MailHandler.SentMail(message);
                 };
-                channel.BasicConsume(queue: "SendFromClient",
+                channel.BasicConsume(queue: "SentFromClient",
                                  autoAck: true,
                                  consumer: consumer);
                 Console.ReadLine();
@@ -61,7 +61,7 @@ namespace EmailService
             using (SmtpClient smtpClient = new SmtpClient())
             {
                 mailMessage.To.Add(new MailAddress("carlsen57@gmail.com"));
-                mailMessage.From = new MailAddress("carlsen57@gmail.com");      //Create fake email and test with. 
+                mailMessage.From = new MailAddress("risopew852@whecode.com");      //Create fake email and test with. 
                 mailMessage.Subject = "From the mailService!";
                 mailMessage.IsBodyHtml = true;
                 mailMessage.Body = message; 
@@ -69,7 +69,7 @@ namespace EmailService
                 smtpClient.Host = "smtp.gmail.com";
                 smtpClient.EnableSsl = true;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("FromMailAddress", "password");  //Change to the new email address. 
+                //smtpClient.Credentials = new NetworkCredential("FromMailAddress", "password");  //Change to the new email address. 
                 smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtpClient.Send(mailMessage);
             }
