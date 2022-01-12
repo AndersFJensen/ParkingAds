@@ -5448,23 +5448,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carls\\.nuget\\packages\\": {},
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingServiceTestProject\\BookingServiceTestProject.csproj",
+      "projectUniqueName": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingServiceTestProject\\BookingServiceTestProject.csproj",
       "projectName": "BookingServiceTestProject",
-      "projectPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingServiceTestProject\\BookingServiceTestProject.csproj",
-      "packagesPath": "C:\\Users\\carls\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingServiceTestProject\\obj\\",
+      "projectPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingServiceTestProject\\BookingServiceTestProject.csproj",
+      "packagesPath": "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingServiceTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\carls\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Magnus Carlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5479,8 +5479,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj": {
-              "projectPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj"
+            "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj": {
+              "projectPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\BookingService\\BookingService.csproj"
             }
           }
         }
@@ -5531,7 +5531,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

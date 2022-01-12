@@ -995,23 +995,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\carls\\.nuget\\packages\\": {},
+    "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA.csproj",
+      "projectUniqueName": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA.csproj",
       "projectName": "Service_Solution_Project2_PBA",
-      "projectPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA.csproj",
-      "packagesPath": "C:\\Users\\carls\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\carls\\Desktop\\Eksamen 2. semester\\Kode\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\obj\\",
+      "projectPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA.csproj",
+      "packagesPath": "C:\\Users\\Magnus Carlsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Magnus Carlsen\\Desktop\\Studie Opgaver\\ParkingAd\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Service_Solution_Project2_PBA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\carls\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Magnus Carlsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1070,7 +1070,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
