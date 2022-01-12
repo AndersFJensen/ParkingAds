@@ -25,14 +25,15 @@ namespace Service_Solution_Project2_PBA.repositories
 
         public async Task<AdServiceMessageModel> CallAdServiceGET()
         {
-            AdServiceMessageModel message = new AdServiceMessageModel(); 
-            HttpResponseMessage response = await client.GetAsync(url);
-            message.header = "AdService"; 
-            if (response.IsSuccessStatusCode)
+            AdServiceMessageModel message = new AdServiceMessageModel();
+            using (HttpResponseMessage response = await client.GetAsync(url))
             {
-                message.body = await response.Content.ReadAsStringAsync();
+                message.header = "AdService";
+                if (response.IsSuccessStatusCode)
+                {
+                    message.body = await response.Content.ReadAsStringAsync();
+                }
             }
-
 
             return message; 
         }
