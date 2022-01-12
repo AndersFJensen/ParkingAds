@@ -67,24 +67,37 @@ namespace Service_Solution_Project2_PBA
         }
 
         /**get entry from Redis method*/
-        public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache, string recordId)
+        public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache, string recordId, string cacheIdentifier)
         {
+            
             string jsonData = await cache.GetStringAsync(recordId);
             if (jsonData is null)
             {
-                jsonData = await GetRecordAsyncHelper(cache, recordId);
+                jsonData = await GetRecordAsyncHelper(cache, recordId, cacheIdentifier);
             }
             Console.WriteLine($"Loaded entry {jsonData} from Redis with id {recordId} at {DateTime.Now} \n");
             return JsonSerializer.Deserialize<T>(jsonData);
         }
 
-        private static async Task<string> GetRecordAsyncHelper(IDistributedCache cache, string cacheRecord)
+        private static async Task<string> GetRecordAsyncHelper(IDistributedCache cache, string cacheRecord, string cacheIdentifier)
         {
+            if (cacheIdentifier == "Ad")
+            {
+                AdServiceServiceReposIF adService = new AdServiceServiceRepos();
+                var data = await adService.CallAdServiceGET();
+                await SetRecordAsync(cache, cacheRecord, data.body);
+                return data.body;
+
+            }
+            else
+            {
+                ParkingAdServiceReposIF parkingAdService = new ParkingAdServiceRepos();
+                var data = await parkingAdService.GetParkingAdServiceDataGET();
+                await SetRecordAsync(cache, cacheRecord, data.body);
+                return data.body;
+            }
             
-            ParkingAdServiceReposIF parkingAdService = new ParkingAdServiceRepos();
-            ParkingAdServiceMessageModel data = await parkingAdService.GetParkingAdServiceDataGET();
-            await SetRecordAsync(cache, cacheRecord, data.body);
-            return data.body;
+
         }
     }
 }

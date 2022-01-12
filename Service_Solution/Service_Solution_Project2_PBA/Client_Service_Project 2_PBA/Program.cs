@@ -10,6 +10,7 @@ namespace Client_Service_Project_2_PBA
             RabbitMQSent sendWithRabbitMQ = new RabbitMQSent();
             string message = "Message From Client";
             sendWithRabbitMQ.RabbitMQSend(message);
+            RabbitMQReceive rabbitMQReceive = new RabbitMQReceive(message);
         }
     }
 }

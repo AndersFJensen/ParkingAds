@@ -11,15 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client_Service_Project 2_PB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingService", "BookingService\BookingService.csproj", "{0A45CE4B-A9FA-427F-A1BF-0660CEBA82E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{FB03CDF6-ECB7-4881-BB4D-E9ED39482409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailService", "EmailService\EmailService.csproj", "{FB03CDF6-ECB7-4881-BB4D-E9ED39482409}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlBus", "ControlBus\ControlBus.csproj", "{71E7344C-9986-4871-B1D1-A803E5754216}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlBus", "ControlBus\ControlBus.csproj", "{71E7344C-9986-4871-B1D1-A803E5754216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailServiceTestProject", "MailServiceTestProject\MailServiceTestProject.csproj", "{B3B98688-79B9-4AC3-87D6-24F44E8C54A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailServiceTestProject", "MailServiceTestProject\MailServiceTestProject.csproj", "{B3B98688-79B9-4AC3-87D6-24F44E8C54A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingServiceTestProject", "BookingServiceTestProject\BookingServiceTestProject.csproj", "{CCCDA698-1215-4EB8-AD9A-146068FA7AB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingServiceTestProject", "BookingServiceTestProject\BookingServiceTestProject.csproj", "{CCCDA698-1215-4EB8-AD9A-146068FA7AB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlBusTestProject", "ControlBusTestProject\ControlBusTestProject.csproj", "{B62F2D39-92EE-4444-891D-EBD81906193A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlBusTestProject", "ControlBusTestProject\ControlBusTestProject.csproj", "{B62F2D39-92EE-4444-891D-EBD81906193A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
