@@ -2,11 +2,10 @@
 using RabbitMQ.Client.Events;
 using System;
 using System.Text;
-using MongoDB;
 using MongoDB.Driver;
-using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 using System.Threading.Tasks;
+using MongoDB.Bson.Serialization;
 
 namespace BookingService
 {
@@ -45,17 +44,13 @@ namespace BookingService
                     var message = Encoding.UTF8.GetString(body);
                     Console.WriteLine(" [x] Received {0}", message);
 
-                    CreateBookingModel(message);
+                    RabbitMQSent.SentMessageRabbitMQ(message);
                 };
                 channel.BasicConsume(queue: "SendFromClient",
                                  autoAck: true,
                                  consumer: consumer);
                 Console.ReadLine();
             }
-        }
-        public async void CreateBookingModel(string message)
-        {
-            await MongoDBHandler.CreateBooking(null);       //Create bookingModel for saving.
         }
     }
     static class RabbitMQSent
@@ -90,36 +85,15 @@ namespace BookingService
         }
     }
 
-    public class BookingModel
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; }
-        [BsonElement("Price")]
-        public string Price { get; set; }
-        [BsonElement("Location")]
-        public string Location { get; set; }
-        [BsonElement("License Plate Number")]
-        public string LicensePlateNr { get; set; }
-        [BsonElement("User")]
-        public string User { get; set; }
-    }
-
     public static class MongoDBHandler
     {
-        public static async Task CreateBooking(BookingModel message)
+        public static async Task CreateBooking(string message)
         {
-            BsonDocument bsonElement = new BsonDocument {
-                {"","" },
-                {"","" },
-                {"","" },
-                {"","" },
-                {"","" }
-            };
+            BsonDocument document = BsonSerializer.Deserialize<BsonDocument>(message);
             MongoClient dbClient = new MongoClient("mongodb://localhost:27017;DatebaseName:'BookingData';CollectionName:'Bookings'");
             var database = dbClient.GetDatabase("BookingsData");
             var collection = database.GetCollection<BsonDocument>("Bookings");
-            try { await collection.InsertOneAsync(bsonElement);
+            try { await collection.InsertOneAsync(document);
                 RabbitMQSent.SentMessageRabbitMQ(message.ToString());       
             }
             catch (Exception e) { throw new Exception("Couldnt insert the booking model to MongoDb! Try again or check for an error! "); }
