@@ -10,24 +10,36 @@ namespace Service_Solution_Project2_PBA.services
 {
     public class RedisCacheService : RedisCacheServiceIF
     {
-        private readonly RedisCache redisCache = null;
+        private readonly RedisCache parkingRedisCache = null;
+        private readonly RedisCache adRedisCache = null;
         public RedisCacheService()
         {
-            redisCache = new RedisCache(new RedisCacheOptions
+            parkingRedisCache = new RedisCache(new RedisCacheOptions
             {
                 Configuration = "127.0.0.1:5002",
-                //InstanceName = "RedisCache_" + Guid.NewGuid().ToString(),
+                InstanceName = "RedisCache_ParkingService" ,
+            });
+            adRedisCache = new RedisCache(new RedisCacheOptions
+            {
+                Configuration = "127.0.0.1:5002",
+                InstanceName = "RedisCache_AdService",
             });
         }
-        public async Task<T> RetrieveFromCache<T>(string recordId)
+
+        public async Task<T> RetrieveFromCacheAdService<T>(string recordId)
         {
-            return await DistributedCacheExtensions.GetRecordAsync<T>(redisCache, recordId);
+            return await DistributedCacheExtensions.GetRecordAsync<T>(adRedisCache, recordId);
+        }
+
+        public async Task<T> RetrieveFromCacheParkingService<T>(string recordId)
+        {
+            return await DistributedCacheExtensions.GetRecordAsync<T>(parkingRedisCache, recordId);
             
         }
 
-        public async Task SaveToCache<T>(string recordId, T data)
+        public async Task SaveToCacheParkingService<T>(string recordId, T data)
         {
-            await DistributedCacheExtensions.SetRecordAsync(redisCache, recordId, data);
+            await DistributedCacheExtensions.SetRecordAsync(parkingRedisCache, recordId, data);
         }
     }
 }

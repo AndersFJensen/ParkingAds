@@ -10,5 +10,7 @@ namespace Service_Solution_Project2_PBA.repositories
     public interface AdServiceServiceReposIF
     {
         public Task<AdServiceMessageModel> CallAdServiceGET();
+
+
     }
 }

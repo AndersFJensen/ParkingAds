@@ -10,5 +10,6 @@ namespace Service_Solution_Project2_PBA.services
     public interface AdServiceServiceIF
     {
         public Task<AdServiceMessageModel> GetAdFromAdService();
+        public Task UpdateAdInCache();
     }
 }

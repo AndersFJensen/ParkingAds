@@ -2,6 +2,9 @@
 using RabbitMQ.Client;
 using System.Text;
 using RabbitMQ.Client.Events;
+using Service_Solution_Project2_PBA.repositories.redisCache;
+using Service_Solution_Project2_PBA.services;
+using Service_Solution_Project2_PBA.domain;
 
 namespace Service_Solution_Project2_PBA
 {
@@ -11,6 +14,7 @@ namespace Service_Solution_Project2_PBA
         //Will keep running with the EventingBasicConsumer event.  
         public RabbitMQRecieve()
         {
+                      
             var factory = new ConnectionFactory()
             {
                 UserName = "guest",
@@ -29,8 +33,13 @@ namespace Service_Solution_Project2_PBA
                 consumer.Received += (model, ea) =>
                 {
                     var body = ea.Body.ToArray();
-                    var message = Encoding.UTF8.GetString(body);  
-                    Console.WriteLine(" [x] Received {0}", message);
+                    var message = Encoding.UTF8.GetString(body);
+                    RedisCacheServiceIF rediscacheService = new RedisCacheService();
+                    var answer = rediscacheService.RetrieveFromCacheParkingService<string>(message);
+
+                    var ad = rediscacheService.RetrieveFromCacheAdService<string>(message);
+                    //Console.WriteLine(" [x] Received {0}", message);
+                    
                 };
                 channel.BasicConsume(queue: "SendFromClient",
                                  autoAck: true,
