@@ -67,16 +67,17 @@ namespace Service_Solution_Project2_PBA
         }
 
         /**get entry from Redis method*/
-        public static async Task<T> GetRecordAsync<T>(this IDistributedCache cache, string recordId, string cacheIdentifier)
+        public static async Task<string> GetRecordAsync<T>(this IDistributedCache cache, string recordId, string cacheIdentifier)
         {
             
             string jsonData = await cache.GetStringAsync(recordId);
             if (jsonData is null)
             {
                 jsonData = await GetRecordAsyncHelper(cache, recordId, cacheIdentifier);
+                return jsonData;
             }
             Console.WriteLine($"Loaded entry {jsonData} from Redis with id {recordId} at {DateTime.Now} \n");
-            return JsonSerializer.Deserialize<T>(jsonData);
+            return JsonSerializer.Deserialize<T>(jsonData).ToString();
         }
 
         private static async Task<string> GetRecordAsyncHelper(IDistributedCache cache, string cacheRecord, string cacheIdentifier)

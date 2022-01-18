@@ -8,9 +8,23 @@ namespace Client_Service_Project_2_PBA
         static void Main(string[] args)
         {
             RabbitMQSent sendWithRabbitMQ = new RabbitMQSent();
-            string message = "Message From Client";
-            sendWithRabbitMQ.RabbitMQSend(message);
-            RabbitMQReceive rabbitMQReceive = new RabbitMQReceive(message);
+            while (true)
+            {
+                
+                string message = Console.ReadLine();  
+                sendWithRabbitMQ.RabbitMQSend(message);
+            }
+
+            //if(Console.ReadLine() == "Receive")
+            //{
+                //RabbitMQReceive rabbitMQReceive = new RabbitMQReceive(message);
+            //}else if(Console.ReadLine() == "Send")
+            //{
+
+            //}
+
+            
+            
         }
     }
 }

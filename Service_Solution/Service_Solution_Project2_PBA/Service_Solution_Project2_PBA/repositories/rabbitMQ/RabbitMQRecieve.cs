@@ -15,7 +15,6 @@ namespace Service_Solution_Project2_PBA
         //Will keep running with the EventingBasicConsumer event.  
         public RabbitMQRecieve()
         {
-
             var factory = new ConnectionFactory()
             {
                 UserName = "guest",
@@ -31,16 +30,22 @@ namespace Service_Solution_Project2_PBA
                                  autoDelete: false,
                                  arguments: null);
                 var consumer = new EventingBasicConsumer(channel);
-                consumer.Received += (model, ea) =>
+                consumer.Received += async (model, ea) =>
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
                     RedisCacheServiceIF rediscacheService = new RedisCacheService();
                     var answer = rediscacheService.RetrieveFromCacheParkingService<string>(message);
 
-                    var ad = rediscacheService.RetrieveFromCacheAdService<string>(message);
+                    //var ad = rediscacheService.RetrieveFromCacheAdService<string>(message);
 
-                    SendWithRabbit(answer.Result, ad.Result, message);
+
+
+                    //SendWithRabbit(answer.Result, ad.Result, message);
+
+                    //TEST CALL
+                    SendWithRabbit(answer.Result, "TEST", message);
+
 
                     //Console.WriteLine(" [x] Received {0}", message);
 
@@ -50,9 +55,8 @@ namespace Service_Solution_Project2_PBA
                                  consumer: consumer);
                 Console.ReadLine();
             }
-
-
         }
+        
 
 
         public void SendWithRabbit (string parking, string ad, string message)

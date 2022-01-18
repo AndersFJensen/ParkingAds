@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zm0C4ekEJuff/kNdhqpf4wto/QtG1iYnW44KNjDJQiYoUcVFXj+x7HDyU4Q1t3oyQE07irKsDlJcEFotQ1SbtA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fanes\\source\\repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\EmailService\\EmailService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fanes\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\fanes\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\fanes\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

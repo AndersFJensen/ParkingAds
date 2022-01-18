@@ -15,12 +15,17 @@ namespace Service_Solution_Project2_PBA.repositories
         private static readonly string url = "http://psuparkingservice.fenris.ucn.dk/service";
         private static Timer aTimer;
 
+
         public ParkingAdServiceRepos()
         {
-            client.BaseAddress = new Uri("http://localhost:64196/");
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/json"));
+            if(client is null)
+            {
+                client.BaseAddress = new Uri("http://localhost:64196/");
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+            }
+            
         }
         public async Task<ParkingAdServiceMessageModel> GetParkingAdServiceDataGET()
         {

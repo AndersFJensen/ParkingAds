@@ -66,6 +66,7 @@ namespace Service_Solution_Project2_PBA
             //List<TestEntry> testList = await TestRedisCacheConnection();
 
             var rabbitMQReciever = new RabbitMQRecieve();
+            //rabbitMQReciever.RabbitReceiveServiceSolution;
             
             //foreach (TestEntry entry in testList)
             //{

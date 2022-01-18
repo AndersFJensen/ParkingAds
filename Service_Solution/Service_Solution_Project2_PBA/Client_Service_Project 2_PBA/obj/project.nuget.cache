@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "gi/mr/Ocuh0I7l9mvaZEIKgRQ6BHN18bh2eZFQUhFyW8VqORVm4xktJZ3UIvrg8m8p5nWvAHhjpz0Gt6hL6ylg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fanes\\source\\repos\\AndersFJensen\\ParkingAds\\Service_Solution\\Service_Solution_Project2_PBA\\Client_Service_Project 2_PBA\\Client_Service_Project 2_PBA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fanes\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\fanes\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\fanes\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
+    "C:\\Users\\fanes\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

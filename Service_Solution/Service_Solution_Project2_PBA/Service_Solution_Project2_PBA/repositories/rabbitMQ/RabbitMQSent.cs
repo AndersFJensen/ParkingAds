@@ -31,10 +31,15 @@ namespace Service_Solution_Project2_PBA
                                      basicProperties: null,
                                      body: body);
                 Console.WriteLine(" [x] Sent {0} and {1}", parking, ad);
-                Console.ReadLine();
+                //Console.ReadLine();
             }
+
+
+            
 
         }
 
     }
+
+    
 }
